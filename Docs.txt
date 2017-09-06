@@ -1,0 +1,18 @@
+I. OpenSSH
+1. Installation of OpenSSH in Linux
+sudo apt-get install openssh-server openssh-client
+2. Configuration of OpenSSH
+sudo cp /etc/ssh/sshd_config /etc/ssh/sshd_config.orig
+3. Connect
+// default ssh have port 22
+nc -v -z 127.0.0.1 22
+
+// change port as 13 in sshd_config and restart service
+sudo /etc/init.d/ssh restart
+
+// connect again
+nc -v -z 127.0.0.1 13
+
+II.
+
+
